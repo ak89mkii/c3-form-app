@@ -41,7 +41,8 @@
 //
 
 #### Fonts / Credits:
-// 
+// https://fonts.google.com/specimen/Press+Start+2P?query=8+
 
 ## Helpful Resources:
+// https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_replace
 // 
