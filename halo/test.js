@@ -34,7 +34,7 @@ testInput.addEventListener('input', testCount)
 
 // Function-01:
 function countCharacters(e) {
-    oldFileCount.textContent = e.target.value.length;
+    oldFileCount.textContent = "COUNT:" + e.target.value.length;
     // oldFileCount.textContent = e.target.value;
 
 }
