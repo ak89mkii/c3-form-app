@@ -10,6 +10,7 @@
             @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Press+Start+2P&display=swap');
         </style>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
     </head>
     <body>
@@ -35,24 +36,26 @@
         <div class="form">
             <form>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Paste your filename (containing the blanks spaces) in the field" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <input type="text" class="form-control" placeholder="Paste your filename (containing the blanks spaces) in the field." aria-label="Recipient's username" aria-describedby="basic-addon2" id="oldName">
                         <span class="input-group-text" id="basic-addon2">
-                        Count:
+                        Character Count:
                         </span>
                     <input class="input2" id="characterCountOld"  value=0>
                 </div>
             </form>
-            
-            <button type="button" class="btn btn-dark">Press to Convert</button>
+
+            <button type="button" class="btn btn-dark btn-lg">Press to Convert</button>
 
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Paste your filename (containing the blanks spaces) in the field" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <input type="text" class="form-control" placeholder="New filename with underscores." aria-label="Recipient's username" aria-describedby="basic-addon2" id="newName">
                     <span class="input-group-text" id="basic-addon2">
-                    Count:
+                    Character Count:
                     </span>
-                <input class="input2" id="characterCountOld"  value=0>
+                <input class="input2" id="characterCountNew"  value=0>
             </div>
         
+            <button type="button" class="btn btn-dark btn-lg"><i class="bi bi-clipboard-check-fill"></i></button>
+            
         <script src="" async defer></script>
     </body>
 </html>
