@@ -39,7 +39,22 @@ oldFileName.addEventListener('input',  function(e) {
 
 // Function-01:
 function countCharacters(e) {
-    oldFileCount.textContent = "COUNT:" + e.target.value.length;
+    let oldString =  e.target.value;
+    let oldCountArr = oldString.split("");
+    let blankAdd = 0
+    let oldCount = 0
+    let oldFinalCount = 0
+    console.log(oldCountArr)
+    for (let i = 0; i < oldCountArr.length; i++) {
+        if (oldCountArr[i] === " ") {
+            blankAdd += 3
+        } else {
+            oldCount += 1
+        }
+        oldFinalCount = blankAdd + oldCount
+    }
+
+    oldFileCount.textContent = "COUNT:" + oldFinalCount;
 }
 
 // Function-02:
