@@ -6,9 +6,10 @@ const oldFileNameButton = document.getElementById("oldButton")
 const newFileNameButton = document.getElementById("newButton")
 const oldFileCount = document.getElementById("characterCountOld")
 
-// TESTING!
-const testInput = document.getElementById("goku");
-const testOutput = document.getElementById("vegeta");
+// // TESTING!
+// const testInput = document.getElementById("goku");
+// const testOutput = document.getElementById("vegeta");
+
 
 // Event Listeners:
 
@@ -27,22 +28,20 @@ oldFileName.addEventListener('input', countCharacters);
 //     convertFileName();
 // })
 
-// TESTING!
-testInput.addEventListener('input', testCount) 
+// // TESTING!
+// testInput.addEventListener('input', testCount) 
+
 
 // Functions:
 
 // Function-01:
 function countCharacters(e) {
     oldFileCount.textContent = "COUNT:" + e.target.value.length;
-    // oldFileCount.textContent = e.target.value;
-
 }
 
-// TESTING!
-function testCount(e) {
-    testOutput.textContent =  e.target.value;
-    // oldFileCount.textContent = e.target.value;
-
-}
+// // TESTING!
+// function testCount(e) {
+//     testOutput.textContent =  e.target.value;
+//     // oldFileCount.textContent = e.target.value;
+// }
 
