@@ -14,14 +14,17 @@ const oldFileCount = document.getElementById("characterCountOld")
 // Event Listeners:
 
 // EL-01: Counts number of characters in first input field.
-oldFileName.addEventListener('input', countCharacters);
+oldFileName.addEventListener('input',  function(e) {
+    countCharacters(e);
+    newName(e);   
+}) 
 
 // oldFileNameButton.addEventListener('click', function() {
 //     convertFileName();
 // })
 
 // newFileName.addEventListener('input', function() {
-//     countCharacters();
+//     newName();
 // })
 
 // newFileNameButton.addEventListener('click', function() {
@@ -37,6 +40,11 @@ oldFileName.addEventListener('input', countCharacters);
 // Function-01:
 function countCharacters(e) {
     oldFileCount.textContent = "COUNT:" + e.target.value.length;
+}
+
+// Function-02:
+function newName(e) {
+    newFileName.textContent = e.target.value;
 }
 
 // // TESTING!
