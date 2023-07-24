@@ -66,6 +66,7 @@ hr.rounded {
     border-width: 10px;
     border-radius: 30px;
     border-color: black;
+    background-color: grey;
 }
 
 .input-group {
@@ -75,4 +76,9 @@ hr.rounded {
 
 .bi {
     height: 50px;
+}
+
+#characterCountOld {
+    color: black;
+    font-family: 'Press Start 2P', cursive;
 }
