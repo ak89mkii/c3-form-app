@@ -43,11 +43,11 @@ hr.rounded {
     /* font-weight: bold; */
 }
 
-.input {
+.input1 {
     text-align: center;
     margin: 20px;
     width: 500px;
-    height: 30px;
+    height: 50px;
     border-style: solid;
     border-width: 10px;
     border-radius: 5px;
@@ -57,11 +57,11 @@ hr.rounded {
 .input2 {
     text-align: center;
     /* margin: 20px; */
-    font-size: 30px;
+    font-size: 20px;
     /* font-weight: bold; */
     font-family: 'Press Start 2P', cursive;
-    width: 120px;
-    height: 100px;
+    width: 100px;
+    height: 50px;
     border-style: solid;
     border-width: 10px;
     border-radius: 30px;
