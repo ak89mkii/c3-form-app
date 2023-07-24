@@ -67,3 +67,8 @@ hr.rounded {
     border-radius: 30px;
     border-color: black;
 }
+
+.input-group {
+    margin: 20px;
+    width: auto;
+}
