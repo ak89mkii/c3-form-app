@@ -5,6 +5,7 @@ const newFileName = document.getElementById("newName")
 const oldFileNameButton = document.getElementById("oldButton")
 const newFileNameButton = document.getElementById("newButton")
 const oldFileCount = document.getElementById("characterCountOld")
+const newFileCount = document.getElementById("characterCountNew")
 
 // // TESTING!
 // const testInput = document.getElementById("goku");
@@ -78,7 +79,7 @@ function newName(e) {
     newString = newCountArr.toString();
     newFinalString = newString.split(",").join('')
     newFileName.textContent = newFinalString
-    // newString = newCount;
+    newFileCount.textContent = newCount;
 }
 
 // // TESTING!
