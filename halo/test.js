@@ -76,7 +76,8 @@ function newName(e) {
     console.log(newCountArr)
 
     newString = newCountArr.toString();
-    newFileName.textContent = newString
+    newFinalString = newString.split(",").join('')
+    newFileName.textContent = newFinalString
     // newString = newCount;
 }
 
