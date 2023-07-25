@@ -45,7 +45,8 @@
 // https://www.freecodecamp.org/news/insert-into-javascript-array-at-specific-index/#:~:text=The%20splice()%20method%20in,specific%20index%20in%20an%20array.
 // https://www.w3schools.com/jsref/jsref_tostring_array.asp
 // https://java2blog.com/remove-comma-from-string-javascript/#:~:text=Using%20replaceAll()-,To%20remove%20comma%20from%20string%20in%20Javascript%3A,matches%20replaced%20by%20given%20replacement.
-.. 
+// https://www.freecodecamp.org/news/copy-text-to-clipboard-javascript/#:~:text=To%20copy%20text%20with%20the,used%20to%20hold%20a%20string.
+// 
 
 #### Images References / Credits:
 //
