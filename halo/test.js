@@ -55,7 +55,7 @@ function countCharacters(e) {
         oldFinalCount = blankAdd + oldCount
     }
 
-    oldFileCount.textContent = "COUNT:" + oldFinalCount;
+    oldFileCount.textContent = oldFinalCount + " CHAR" ;
 }
 
 // Function-02: Convert Blanks to Underscores and Count
@@ -79,7 +79,7 @@ function newName(e) {
     newString = newCountArr.toString();
     newFinalString = newString.split(",").join('')
     newFileName.textContent = newFinalString
-    newFileCount.textContent = newCount;
+    newFileCount.textContent = newCount + " CHAR";
 }
 
 // Function-03: Copy to Clipboard
