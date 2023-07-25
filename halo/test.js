@@ -6,6 +6,7 @@ const oldFileNameButton = document.getElementById("oldButton")
 const convertFileName = document.getElementById("newButton")
 const oldFileCount = document.getElementById("characterCountOld")
 const newFileCount = document.getElementById("characterCountNew")
+const buttonIcon = document.getElementById("icon")
 
 // // TESTING!
 // const testInput = document.getElementById("goku");
@@ -88,6 +89,8 @@ function copyFunction() {
     let copyConvert = newFileName.textContent
     // copyConvert.writeText();
     navigator.clipboard.writeText(copyConvert);
+    buttonIcon.classList.remove("bi-clipboard-fill");
+    buttonIcon.classList.add("bi-clipboard-check-fill");
 }
 
 // // TESTING!
