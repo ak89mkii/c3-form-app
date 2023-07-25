@@ -3,7 +3,7 @@
 const oldFileName = document.getElementById("oldName")
 const newFileName = document.getElementById("newName")
 const oldFileNameButton = document.getElementById("oldButton")
-const newFileNameButton = document.getElementById("newButton")
+const convertFileName = document.getElementById("newButton")
 const oldFileCount = document.getElementById("characterCountOld")
 const newFileCount = document.getElementById("characterCountNew")
 
@@ -28,9 +28,9 @@ oldFileName.addEventListener('input',  function(e) {
 //     newName();
 // })
 
-// newFileNameButton.addEventListener('click', function() {
-//     convertFileName();
-// })
+convertFileName.addEventListener('click', function() {
+    copyFunction();
+})
 
 // // TESTING!
 // testInput.addEventListener('input', testCount) 
@@ -58,7 +58,7 @@ function countCharacters(e) {
     oldFileCount.textContent = "COUNT:" + oldFinalCount;
 }
 
-// Function-02:
+// Function-02: Convert Blanks to Underscores and Count
 function newName(e) {
     let oldString =  e.target.value;
     let newString =  "";
@@ -80,6 +80,14 @@ function newName(e) {
     newFinalString = newString.split(",").join('')
     newFileName.textContent = newFinalString
     newFileCount.textContent = newCount;
+}
+
+// Function-03: Copy to Clipboard
+function copyFunction() {
+    console.log(newFileName)
+    let copyConvert = newFileName.textContent
+    // copyConvert.writeText();
+    navigator.clipboard.writeText(copyConvert);
 }
 
 // // TESTING!

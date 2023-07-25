@@ -41,7 +41,11 @@
 // https://developer.mozilla.org/en-US/play
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length
 // https://getbootstrap.com/docs/5.3/components/buttons/#variants
-// 
+// https://www.geeksforgeeks.org/how-to-get-character-array-from-string-in-javascript/
+// https://www.freecodecamp.org/news/insert-into-javascript-array-at-specific-index/#:~:text=The%20splice()%20method%20in,specific%20index%20in%20an%20array.
+// https://www.w3schools.com/jsref/jsref_tostring_array.asp
+// https://java2blog.com/remove-comma-from-string-javascript/#:~:text=Using%20replaceAll()-,To%20remove%20comma%20from%20string%20in%20Javascript%3A,matches%20replaced%20by%20given%20replacement.
+.. 
 
 #### Images References / Credits:
 //
