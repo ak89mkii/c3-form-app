@@ -59,7 +59,25 @@ function countCharacters(e) {
 
 // Function-02:
 function newName(e) {
-    newFileName.textContent = e.target.value;
+    let oldString =  e.target.value;
+    let newString =  "";
+    let newCountArr = oldString.split("");
+    // let blankAdd = 0
+    let newCount = 0
+    // let oldFinalCount = 0
+    console.log(newCountArr)
+    for (let i = 0; i < newCountArr.length; i++) {
+        if (newCountArr[i] === " ") {
+            newCountArr.splice(i,1,"_")
+        }
+        newCount += 1
+        // newString = newCountArr.toString();
+    }
+    console.log(newCountArr)
+
+    newString = newCountArr.toString();
+    newFileName.textContent = newString
+    // newString = newCount;
 }
 
 // // TESTING!
