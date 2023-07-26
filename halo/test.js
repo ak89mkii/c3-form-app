@@ -21,14 +21,7 @@ oldFileName.addEventListener('input',  function(e) {
     newName(e);   
 }) 
 
-// oldFileNameButton.addEventListener('click', function() {
-//     convertFileName();
-// })
-
-// newFileName.addEventListener('input', function() {
-//     newName();
-// })
-
+// EL-02: Copy button click.
 convertFileName.addEventListener('click', function() {
     copyFunction();
 })
@@ -64,20 +57,17 @@ function newName(e) {
     let oldString =  e.target.value;
     let newString =  "";
     let newCountArr = oldString.split("");
-    // let blankAdd = 0
     let newCount = 0
-    // let oldFinalCount = 0
     console.log(newCountArr)
     for (let i = 0; i < newCountArr.length; i++) {
         if (newCountArr[i] === " ") {
             newCountArr.splice(i,1,"_")
         }
         newCount += 1
-        // newString = newCountArr.toString();
     }
     console.log(newCountArr)
-
     newString = newCountArr.toString();
+    // Removes the ",".
     newFinalString = newString.split(",").join('')
     newFileName.textContent = newFinalString
     newFileCount.textContent = newCount + " CHAR";
@@ -85,9 +75,8 @@ function newName(e) {
 
 // Function-03: Copy to Clipboard
 function copyFunction() {
-    console.log(newFileName)
+    console.log("New File Name: " + newFileName.textContent)
     let copyConvert = newFileName.textContent
-    // copyConvert.writeText();
     navigator.clipboard.writeText(copyConvert);
     buttonIcon.classList.remove("bi-clipboard-fill");
     buttonIcon.classList.add("bi-clipboard-check-fill");
