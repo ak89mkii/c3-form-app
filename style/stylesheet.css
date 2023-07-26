@@ -51,6 +51,24 @@ hr.rounded {
     /* font-weight: bold; */
 }
 
+@media (max-width: 500px) {
+    .form {
+        margin: 20px;
+        padding: 20px;
+        background-color: rgb(196, 250, 110);
+        text-align: center;
+        font-size: 11px;    
+    }
+
+    .form-control {
+        font-size: 11px;
+    }
+    
+    .input-group-text {
+        font-size: 11px;
+    }
+}
+
 .input1 {
     text-align: center;
     margin: 20px;
