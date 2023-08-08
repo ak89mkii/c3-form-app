@@ -20,7 +20,6 @@ const diffCountMsg = document.getElementById("diffCounter")
 oldFileName.addEventListener('input',  function(e) {
     countCharacters(e);
     newName(e);   
-    // displayMessage(e);
 }) 
 
 // EL-02: Copy button click.
