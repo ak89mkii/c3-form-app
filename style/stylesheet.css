@@ -37,6 +37,11 @@ body {
     color: white;
 }
 
+#diffCounter {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
 /* Rounded border */
 hr.rounded {
     border-top: 8px solid #bbb;
