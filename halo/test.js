@@ -7,6 +7,7 @@ const convertFileName = document.getElementById("newButton")
 const oldFileCount = document.getElementById("characterCountOld")
 const newFileCount = document.getElementById("characterCountNew")
 const buttonIcon = document.getElementById("icon")
+const diffCountMsg = document.getElementById("diffCounter")
 
 // // TESTING!
 // const testInput = document.getElementById("goku");
@@ -19,6 +20,7 @@ const buttonIcon = document.getElementById("icon")
 oldFileName.addEventListener('input',  function(e) {
     countCharacters(e);
     newName(e);   
+    // displayMessage(e);
 }) 
 
 // EL-02: Copy button click.
@@ -39,17 +41,21 @@ function countCharacters(e) {
     let blankAdd = 0
     let oldCount = 0
     let oldFinalCount = 0
+    // For "displayMessage" function.
+    let saveAdd = 0
     console.log(oldCountArr)
     for (let i = 0; i < oldCountArr.length; i++) {
         if (oldCountArr[i] === " ") {
             blankAdd += 3
+            saveAdd += 2
         } else {
             oldCount += 1
         }
         oldFinalCount = blankAdd + oldCount
     }
-
-    oldFileCount.textContent = oldFinalCount + " CHAR" ;
+    oldFileCount.textContent = oldFinalCount + " CHAR";
+    console.log(saveAdd)
+    displayMessage(saveAdd)
 }
 
 // Function-02: Convert Blanks to Underscores and Count
@@ -80,6 +86,10 @@ function copyFunction() {
     navigator.clipboard.writeText(copyConvert);
     buttonIcon.classList.remove("bi-clipboard-fill");
     buttonIcon.classList.add("bi-clipboard-check-fill");
+}
+
+function displayMessage(saveAdd) {
+    diffCountMsg.textContent = saveAdd + " CHAR SAVED!";
 }
 
 // // TESTING!
