@@ -105,6 +105,21 @@ hr.rounded {
     width: auto;
 }
 
+.columnTitle {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    font-weight: bolder;
+
+}
+
+.label {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
 .bi {
     height: 50px;
 }

@@ -34,6 +34,7 @@
                 
                         <!-- COLUMN 01: Form -->
                         <!-- <div class="input-group" id="diffCounter"> -->
+                            <h3 class='columnTitle'>Input Column:</h3>
                             <p class="alert alert-success" role="alert" id="diffCounter">
                                 The form data will be added to the PowerShell script within the right column.
                             </p>
@@ -41,12 +42,12 @@
                         
                         <!-- Input section of old filename. -->
                         <form>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Filename Goes Here" aria-label="Recipient's username" aria-describedby="basic-addon2" id="oldName">
-                                    <span class="input-group-text" id="characterCountOld">
-                                    0 CHAR
-                                    </span>
-                            </div>
+                            <!-- <div class="input-group mb-3"> -->
+                                <label for ="userName" class="label">New User Account Name:</label><br>
+                                <input id="userName" type="text" class="form-control" placeholder="Username Here!" aria-label="Recipient's username" aria-describedby="basic-addon2" id="oldName">
+                                <label for ="userName" class="label">New User Login Password:</label><br>
+                                <input type="text" class="form-control" placeholder="Password Here!" aria-label="Recipient's username" aria-describedby="basic-addon2" id="oldName">
+                            <!-- </div> -->
                         </form>
             
                         <!-- <p>Gondor vs Vulcan Deployment Test</p> -->
