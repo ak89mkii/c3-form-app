@@ -1,9 +1,11 @@
 # Re_Under App
 ## Description:
-<!-- (STACK) | DESCRIPTION_OF_PROJECT. -->
+(JavaScript) | A simple app that shortens your filenames for you. An empty space is equivalent to %20 in OneDrive, which is three (3) characters in length. An underscore ( _ ) equals only one (1) character in OneNote. 
+
+Replacing the Blank Spaces with an Underscore ( _ )
 
 ## Deployment Link:
-<!-- URL_GOES_HERE -->
+https://re_under.surge.sh/
 
 ## Screenshots:
 <!-- ![Screenshot](LOCATION_OF_FILE) -->
