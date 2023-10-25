@@ -88,7 +88,7 @@ function copyFunction() {
 }
 
 function displayMessage(saveAdd) {
-    diffCountMsg.textContent = saveAdd + " CHAR SAVED!";
+    diffCountMsg.textContent =' When finished, press the "Copy to Clipboard" button underneath the modified script!';
 }
 
 // // TESTING!
