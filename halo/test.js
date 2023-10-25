@@ -52,9 +52,9 @@ function countCharacters(e) {
         }
         oldFinalCount = blankAdd + oldCount
     }
-    oldFileCount.textContent = oldFinalCount + " CHAR";
+    // oldFileCount.textContent = oldFinalCount + " CHAR";
     console.log(saveAdd)
-    displayMessage(saveAdd)
+    displayMessage()
 }
 
 // Function-02: Convert Blanks to Underscores and Count
@@ -87,8 +87,8 @@ function copyFunction() {
     buttonIcon.classList.add("bi-clipboard-check-fill");
 }
 
-function displayMessage(saveAdd) {
-    diffCountMsg.textContent =' When finished, press the "Copy to Clipboard" button underneath the modified script!';
+function displayMessage() {
+    diffCountMsg.textContent = ' When finished, press the "Copy to Clipboard" button underneath the modified script!';
 }
 
 // // TESTING!
