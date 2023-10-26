@@ -1,7 +1,9 @@
 // Cached Element References:
 
 const oldFileName = document.getElementById("oldName")
-const newFileName = document.getElementById("newName")
+const newAccountName = document.getElementById("accountName")
+const scriptBox = document.getElementById("scriptWin")
+
 const oldFileNameButton = document.getElementById("oldButton")
 const convertFileName = document.getElementById("newButton")
 const oldFileCount = document.getElementById("characterCountOld")
@@ -9,7 +11,6 @@ const newFileCount = document.getElementById("characterCountNew")
 const buttonIcon = document.getElementById("icon")
 const messageBoxMsg = document.getElementById("messageBox")
 const messageBoxMsg2 = document.getElementById("messageBox2")
-
 // // TESTING!
 // const testInput = document.getElementById("goku");
 // const testOutput = document.getElementById("vegeta");
@@ -76,14 +77,14 @@ function newName(e) {
     newString = newCountArr.toString();
     // Removes the ",".
     newFinalString = newString.split(",").join('')
-    newFileName.textContent = newFinalString
+    newAccountName.textContent = newFinalString
     newFileCount.textContent = newCount + " CHAR";
 }
 
 // Function-03: Copy to Clipboard
 function copyFunction() {
-    console.log("New File Name: " + newFileName.textContent)
-    let copyConvert = newFileName.textContent
+    console.log("New File Name: " + scriptBox.textContent)
+    let copyConvert = scriptBox.textContent
     navigator.clipboard.writeText(copyConvert);
     buttonIcon.classList.remove("bi-clipboard-fill");
     buttonIcon.classList.add("bi-clipboard-check-fill");

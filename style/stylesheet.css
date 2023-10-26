@@ -129,9 +129,14 @@ hr {
 
 }
 
-#newName {
+#scriptWin {
     text-align: left;
-    font-size: 5px;
+    font-size: 15px;
+}
+
+#accountName {
+    font-weight: bold;
+    background-color: yellow;
 }
 
 .label {

@@ -77,9 +77,31 @@
                          <!-- Undescored name component. -->
                          <div class="input-group ">
                             <container>
-                            <div class="alert alert-primary" role="alert" id="newName">
+                            <div class="alert alert-primary" role="alert" id="scriptWin">
                                 
-                                
+    function Use-NewNamePWAdd {
+        $value = Read-Host "Press 'a', then 'ENTER' to start the 'New User' account setup step Or 'n' to skip"
+        if ( 'a' -eq $value ) {
+            $name = Read-Host "Write the name of the user you wish to add, the press 'ENTER'"
+            Write-Output "New Added Accout Name: $name"
+            $pw = Read-Host "Write the password of the user you wish to add, the press 'ENTER'"
+            $Password = ConvertTo-SecureString $pw -AsPlainText -Force
+            Write-Output "New Added Account Password: <span id="accountName"></span>"
+            $params = @{
+                Name        = $name
+                Password    = $Password
+                FullName    = $name
+                Description = 'New user account.'
+            }
+            New-LocalUser @params
+            Add-LocalGroupMember -Group "Users" -Member $name
+        } elseif ( 'n' -eq $value) {
+            Write-Output "Local new user account add step will be skipped."
+        } else {
+            Use-NewNamePWAdd
+        }
+    }
+    Use-NewNamePWAdd                                
                             </div>
                             </container>
                         </div>
