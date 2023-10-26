@@ -41,9 +41,16 @@ body {
     color: white;
 }
 
-#diffCounter {
-    text-align: center;
+#messageBox {
+    text-align: left;
     font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+}
+
+#messageBox2 {
+    text-align: left;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
 }
 
 /* Rounded border */

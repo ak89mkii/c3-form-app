@@ -7,7 +7,8 @@ const convertFileName = document.getElementById("newButton")
 const oldFileCount = document.getElementById("characterCountOld")
 const newFileCount = document.getElementById("characterCountNew")
 const buttonIcon = document.getElementById("icon")
-const diffCountMsg = document.getElementById("diffCounter")
+const messageBoxMsg = document.getElementById("messageBox")
+const messageBoxMsg2 = document.getElementById("messageBox2")
 
 // // TESTING!
 // const testInput = document.getElementById("goku");
@@ -55,6 +56,7 @@ function countCharacters(e) {
     // oldFileCount.textContent = oldFinalCount + " CHAR";
     console.log(saveAdd)
     displayMessage()
+    displayMessage2()
 }
 
 // Function-02: Convert Blanks to Underscores and Count
@@ -88,7 +90,11 @@ function copyFunction() {
 }
 
 function displayMessage() {
-    diffCountMsg.textContent = ' When finished, press the "Copy to Clipboard" button underneath the modified script!';
+    messageBoxMsg.textContent = ' When finished, press the "Copy to Clipboard" button underneath the modified script!';
+}
+
+function displayMessage2() {
+    messageBoxMsg2.textContent = " POWERSHELL SCRIPT BELOW...DON'T FORGET TO COPY IT!"
 }
 
 // // TESTING!
