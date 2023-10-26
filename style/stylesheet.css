@@ -129,6 +129,11 @@ hr {
 
 }
 
+#newName {
+    text-align: left;
+    font-size: 5px;
+}
+
 .label {
     color: black;
     font-family: 'Open Sans', sans-serif;
