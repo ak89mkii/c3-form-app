@@ -34,6 +34,7 @@ inputNewPW.addEventListener('input',  function(e) {
 // EL-03: Copy button click.
 convertFileName.addEventListener('click', function() {
     copyFunction();
+    displayMessage3();
 })
 
 // // TESTING!
@@ -107,7 +108,11 @@ function displayMessage() {
 }
 
 function displayMessage2() {
-    messageBoxMsg2.textContent = ' "ADD NEW USER AND USER LOGIN PASSWORD" POWERSHELL SCRIPT BELOW...DON\'T FORGET TO COPY IT!'
+    messageBoxMsg2.textContent = ' "Add new user and password" Powershell script below...Don\'t forget to copy it!'
+}
+
+function displayMessage3() {
+    messageBoxMsg2.textContent = ' Copied to Clipboard!'
 }
 
 // // TESTING!
