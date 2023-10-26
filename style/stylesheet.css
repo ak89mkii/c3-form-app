@@ -47,8 +47,8 @@ body {
 }
 
 /* Rounded border */
-hr.rounded {
-    border-top: 8px solid #bbb;
+hr {
+    border-top: 5px solid black;
     border-radius: 5px;
 }
 
@@ -77,6 +77,10 @@ hr.rounded {
     .input-group-text {
         font-size: 11px;
     }
+}
+
+#columRight {
+    background-color: orange;
 }
 
 .input1 {
@@ -113,7 +117,7 @@ hr.rounded {
 .columnTitle {
     color: black;
     font-family: 'Open Sans', sans-serif;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bolder;
 
 }
