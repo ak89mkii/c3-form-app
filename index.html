@@ -46,11 +46,11 @@
                             <!-- <div class="input-group mb-3"> -->
                                 <label for ="userName" class="label">New User Account Name:</label>
                                 <br>
-                                <input type="text" class="form-control" placeholder="Username Here!" aria-label="Recipient's username" aria-describedby="basic-addon2" id="oldName">
+                                <input type="text" class="form-control" placeholder="Username Here!" aria-label="Recipient's username" aria-describedby="basic-addon2" id="inputName">
 
                                 <label for ="userName" class="label">New User Login Password:</label>
                                 <br>
-                                <input type="text" class="form-control" placeholder="Password Here!" aria-label="Recipient's username" aria-describedby="basic-addon2" id="oldName2">
+                                <input type="text" class="form-control" placeholder="Password Here!" aria-label="Recipient's username" aria-describedby="basic-addon2" id="inputPW">
 
                             <!-- </div> -->
                         </form>
@@ -69,7 +69,7 @@
                         
                         <h3 class='columnTitle'>SCRIPT COLUMN</h3>
                         <p class="alert alert-success" role="alert" id="messageBox2">
-                            POWERSHELL SCRIPT BELOW...
+                            "ADD NEW USER AND USER LOGIN PASSWORD" POWERSHELL SCRIPT BELOW...
                         </p>
                         
                         <button type="button" class="btn btn-dark btn-lg" id="newButton"><i id="icon" class="bi-clipboard-fill"></i></button>
@@ -82,16 +82,16 @@
     function Use-NewNamePWAdd {
         $value = Read-Host "Press 'a', then 'ENTER' to start the 'New User' account setup step Or 'n' to skip"
         if ( 'a' -eq $value ) {
-            $name = Read-Host "Write the name of the user you wish to add, the press 'ENTER'"
+            $name = "<span id="accountName"></span>"
             Write-Output "New Added Accout Name: $name"
-            $pw = Read-Host "Write the password of the user you wish to add, the press 'ENTER'"
+            $pw = "<span id="accountPW"></span>"
             $Password = ConvertTo-SecureString $pw -AsPlainText -Force
-            Write-Output "New Added Account Password: <span id="accountName"></span>"
+            Write-Output "New Added Account Password: $pw"
             $params = @{
                 Name        = $name
                 Password    = $Password
                 FullName    = $name
-                Description = 'New user account.'
+                Description = 'New user account with password.'
             }
             New-LocalUser @params
             Add-LocalGroupMember -Group "Users" -Member $name

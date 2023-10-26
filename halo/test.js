@@ -1,7 +1,9 @@
 // Cached Element References:
 
-const oldFileName = document.getElementById("oldName")
+const inputNewName = document.getElementById("inputName")
+const inputNewPW = document.getElementById("inputPW")
 const newAccountName = document.getElementById("accountName")
+const newAccountPW = document.getElementById("accountPW")
 const scriptBox = document.getElementById("scriptWin")
 
 const oldFileNameButton = document.getElementById("oldButton")
@@ -19,12 +21,17 @@ const messageBoxMsg2 = document.getElementById("messageBox2")
 // Event Listeners:
 
 // EL-01: Counts number of characters in first input field.
-oldFileName.addEventListener('input',  function(e) {
+inputNewName.addEventListener('input',  function(e) {
     countCharacters(e);
-    newName(e);   
+    newName(e); 
 }) 
 
-// EL-02: Copy button click.
+// EL-02: Counts number of characters in first input field.
+inputNewPW.addEventListener('input',  function(e) {
+    newPW(e);
+}) 
+
+// EL-03: Copy button click.
 convertFileName.addEventListener('click', function() {
     copyFunction();
 })
@@ -81,6 +88,10 @@ function newName(e) {
     newFileCount.textContent = newCount + " CHAR";
 }
 
+function newPW(e) {
+    newAccountPW.textContent = newFinalString
+}
+
 // Function-03: Copy to Clipboard
 function copyFunction() {
     console.log("New File Name: " + scriptBox.textContent)
@@ -95,7 +106,7 @@ function displayMessage() {
 }
 
 function displayMessage2() {
-    messageBoxMsg2.textContent = " POWERSHELL SCRIPT BELOW...DON'T FORGET TO COPY IT!"
+    messageBoxMsg2.textContent = ' "ADD NEW USER AND USER LOGIN PASSWORD" POWERSHELL SCRIPT BELOW...DON\'T FORGET TO COPY IT!'
 }
 
 // // TESTING!
