@@ -89,6 +89,7 @@ function newName(e) {
 }
 
 function newPW(e) {
+    let newFinalString =  e.target.value;
     newAccountPW.textContent = newFinalString
 }
 

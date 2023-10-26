@@ -139,6 +139,11 @@ hr {
     background-color: yellow;
 }
 
+#accountPW {
+    font-weight: bold;
+    background-color: yellow;
+}
+
 .label {
     color: black;
     font-family: 'Open Sans', sans-serif;
