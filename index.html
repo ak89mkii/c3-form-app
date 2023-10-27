@@ -27,7 +27,7 @@
         
         </div>
 
-        <div class="container text-center">        
+        <div class="container-sm text-center">        
             <hr>
             <div class="row">
                 <div class="col">
@@ -36,7 +36,7 @@
                         <!-- COLUMN 01: Form -->
                         <!-- <div class="input-group" id="diffCounter"> -->
                             <h3 class='columnTitle'>INPUT COLUMN</h3>
-                            <p class="alert alert-success" role="alert" id="messageBox">
+                            <p class="alert alert-primary" role="alert" id="messageBox">
                                 The form data will be added to the PowerShell script within the right column.
                             </p>
                         <!-- </div> -->
@@ -51,6 +51,10 @@
                                 <label for ="userName" class="label">New User Login Password:</label>
                                 <br>
                                 <input type="text" class="form-control" placeholder="Password Here!" aria-label="Recipient's username" aria-describedby="basic-addon2" id="inputPW">
+
+                                <label for ="userName" class="label">New PC Name:</label>
+                                <br>
+                                <input type="text" class="form-control" placeholder="PC Name Here!" aria-label="Recipient's username" aria-describedby="basic-addon2" id="inputPCName">
 
                             <!-- </div> -->
                         </form>
@@ -68,7 +72,7 @@
                     <div class="form">    
                         
                         <h3 class='columnTitle'>SCRIPT COLUMN</h3>
-                        <div class="alert alert-success" role="alert" id="messageBox2">
+                        <div class="alert alert-primary" role="alert" id="messageBox2">
                             <p class="typewriter">"Add new user and password" Powershell script below...
                             </p>
                         </div>
@@ -78,7 +82,7 @@
                         <!-- Undescored name component. -->
                         <div class="input-group ">
                             <container>
-                            <div class="alert alert-primary" role="alert" id="scriptWin">
+                            <div class="alert alert-dark" role="alert" id="scriptWin">
                        
 <!-- PowerShell Script Goes Here -->
 function Use-NewNamePWAdd {
@@ -89,6 +93,8 @@ function Use-NewNamePWAdd {
         $pw = "<span id="accountPW"></span>"
         $Password = ConvertTo-SecureString $pw -AsPlainText -Force
         Write-Output "New Added Account Password: $pw"
+        $New_PC_Name = "<span id="pcName"></span>"
+        Write-Output "New Added PC Name: $New_PC_Name"
         $params = @{
             Name        = $name
             Password    = $Password

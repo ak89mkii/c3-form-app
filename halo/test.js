@@ -2,8 +2,10 @@
 
 const inputNewName = document.getElementById("inputName")
 const inputNewPW = document.getElementById("inputPW")
+const inputNewPCName = document.getElementById("inputPCName")
 const newAccountName = document.getElementById("accountName")
 const newAccountPW = document.getElementById("accountPW")
+const newPCName = document.getElementById("pcName")
 const scriptBox = document.getElementById("scriptWin")
 
 const oldFileNameButton = document.getElementById("oldButton")
@@ -29,6 +31,11 @@ inputNewName.addEventListener('input',  function(e) {
 // EL-02: Counts number of characters in first input field.
 inputNewPW.addEventListener('input',  function(e) {
     newPW(e);
+}) 
+
+// EL-04: Counts number of characters in first input field.
+inputNewPCName.addEventListener('input',  function(e) {
+    newPC(e);
 }) 
 
 // EL-03: Copy button click.
@@ -64,8 +71,6 @@ function countCharacters(e) {
     }
     // oldFileCount.textContent = oldFinalCount + " CHAR";
     console.log(saveAdd)
-    displayMessage()
-    displayMessage2()
 }
 
 // Function-02: Convert Blanks to Underscores and Count
@@ -86,12 +91,23 @@ function newName(e) {
     // Removes the ",".
     newFinalString = newString.split(",").join('')
     newAccountName.textContent = newFinalString
-    newFileCount.textContent = newCount + " CHAR";
+    // newFileCount.textContent = newCount + " CHAR"
+    displayMessage()
+    displayMessage2()
 }
 
 function newPW(e) {
     let newFinalString =  e.target.value;
-    newAccountPW.textContent = newFinalString
+    newAccountPW.textContent = newFinalString  
+    displayMessage()
+    displayMessage2()
+}
+
+function newPC(e) {
+    let newFinalString =  e.target.value;
+    newPCName.textContent = newFinalString
+    displayMessage()
+    displayMessage2()
 }
 
 // Function-03: Copy to Clipboard

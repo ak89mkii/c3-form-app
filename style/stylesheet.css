@@ -151,6 +151,11 @@ hr {
     background-color: yellow;
 }
 
+#pcName {
+    font-weight: bold;
+    background-color: yellow;
+}
+
 .label {
     color: black;
     font-family: 'Open Sans', sans-serif;
