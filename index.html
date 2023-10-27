@@ -79,30 +79,33 @@
                         <div class="input-group ">
                             <container>
                             <div class="alert alert-primary" role="alert" id="scriptWin">
-                                
-    function Use-NewNamePWAdd {
-        $value = Read-Host "Press 'a', then 'ENTER' to start the 'New User' account setup step Or 'n' to skip"
-        if ( 'a' -eq $value ) {
-            $name = "<span id="accountName"></span>"
-            Write-Output "New Added Accout Name: $name"
-            $pw = "<span id="accountPW"></span>"
-            $Password = ConvertTo-SecureString $pw -AsPlainText -Force
-            Write-Output "New Added Account Password: $pw"
-            $params = @{
-                Name        = $name
-                Password    = $Password
-                FullName    = $name
-                Description = 'New user account with password.'
-            }
-            New-LocalUser @params
-            Add-LocalGroupMember -Group "Users" -Member $name
-        } elseif ( 'n' -eq $value) {
-            Write-Output "Local new user account add step will be skipped."
-        } else {
-            Use-NewNamePWAdd
+                       
+<!-- PowerShell Script Goes Here -->
+function Use-NewNamePWAdd {
+    $value = Read-Host "Press 'a', then 'ENTER' to start the 'New User' account setup step Or 'n' to skip"
+    if ( 'a' -eq $value ) {
+        $name = "<span id="accountName"></span>"
+        Write-Output "New Added Accout Name: $name"
+        $pw = "<span id="accountPW"></span>"
+        $Password = ConvertTo-SecureString $pw -AsPlainText -Force
+        Write-Output "New Added Account Password: $pw"
+        $params = @{
+            Name        = $name
+            Password    = $Password
+            FullName    = $name
+            Description = 'New user account with password.'
         }
+        New-LocalUser @params
+        Add-LocalGroupMember -Group "Users" -Member $name
+    } elseif ( 'n' -eq $value) {
+            Write-Output "Local new user account add step will be skipped."
+    } else {
+        Use-NewNamePWAdd
     }
-    Use-NewNamePWAdd                                
+}
+Use-NewNamePWAdd                          
+<!-- End -->
+
                             </div>
                             </container>
                         </div>
