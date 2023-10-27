@@ -104,11 +104,11 @@ function copyFunction() {
 }
 
 function displayMessage() {
-    messageBoxMsg.textContent = ' When finished, press the "Copy to Clipboard" button underneath the modified script!';
+    messageBoxMsg.textContent = ' When finished, press the "Copy to Clipboard" button above the modified script!';
 }
 
 function displayMessage2() {
-    messageBoxMsg2.textContent = ' "Add new user and password" Powershell script below...Don\'t forget to copy it!'
+    messageBoxMsg2.textContent = ' "Don\'t forget to copy it!'
 }
 
 function displayMessage3() {

@@ -45,12 +45,14 @@ body {
     text-align: left;
     font-family: 'Press Start 2P', cursive;
     font-size: 12px;
+    height: 150px;
 }
 
 #messageBox2 {
     text-align: left;
     font-family: 'Press Start 2P', cursive;
     font-size: 12px;
+    height: 150px;
 }
 
 /* Rounded border */
@@ -126,9 +128,14 @@ hr {
     font-family: 'Open Sans', sans-serif;
     font-size: 25px;
     font-weight: bolder;
-
 }
 
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  
 #scriptWin {
     text-align: left;
     font-size: 15px;
