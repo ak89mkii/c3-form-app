@@ -91,7 +91,6 @@ function newName(e) {
     // Removes the ",".
     newFinalString = newString.split(",").join('')
     newAccountName.textContent = newFinalString
-    // newFileCount.textContent = newCount + " CHAR"
     displayMessage()
     displayMessage2()
 }
