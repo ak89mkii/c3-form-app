@@ -1,11 +1,9 @@
 # C^3 Form App
 ## Description:
-(Front-End | JavaScript) | A simple app that shortens your filenames for you. An empty space is equivalent to %20 in OneDrive, which is three (3) characters in length. An underscore ( _ ) equals only one (1) character in OneNote. 
-
-Replacing the Blank Spaces with an Underscore ( _ )
+(Front-End | JavaScript) | The Custom Computer Configuration Form App is a template application that allows you to modify a pre-built PowerShell script with information specific to a new PC configuration. 
 
 ## Deployment Link:
-https://re_under.surge.sh/
+https://c3app.surge.sh/
 
 ## Screenshots:
 <!-- ![Screenshot](LOCATION_OF_FILE) -->
@@ -37,17 +35,6 @@ https://re_under.surge.sh/
 // 
 
 #### Information References:
-// // https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_replace
-// https://forum.freecodecamp.org/t/external-javascript-file-issue/91853/4
-// https://www.w3schools.com/jsref/prop_node_textcontent.asp
-// https://developer.mozilla.org/en-US/play
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length
-// https://getbootstrap.com/docs/5.3/components/buttons/#variants
-// https://www.geeksforgeeks.org/how-to-get-character-array-from-string-in-javascript/
-// https://www.freecodecamp.org/news/insert-into-javascript-array-at-specific-index/#:~:text=The%20splice()%20method%20in,specific%20index%20in%20an%20array.
-// https://www.w3schools.com/jsref/jsref_tostring_array.asp
-// https://java2blog.com/remove-comma-from-string-javascript/#:~:text=Using%20replaceAll()-,To%20remove%20comma%20from%20string%20in%20Javascript%3A,matches%20replaced%20by%20given%20replacement.
-// https://www.freecodecamp.org/news/copy-text-to-clipboard-javascript/#:~:text=To%20copy%20text%20with%20the,used%20to%20hold%20a%20string.
 // 
 
 #### Images References / Credits:
