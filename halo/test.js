@@ -95,6 +95,7 @@ function newName(e) {
     displayMessage2()
 }
 
+// Function-02B:
 function newPW(e) {
     let newFinalString =  e.target.value;
     newAccountPW.textContent = newFinalString  
