@@ -103,6 +103,7 @@ function newPW(e) {
     displayMessage2()
 }
 
+// Function-02:
 function newPC(e) {
     let newFinalString =  e.target.value;
     newPCName.textContent = newFinalString
