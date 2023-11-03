@@ -73,7 +73,7 @@ function countCharacters(e) {
     console.log(saveAdd)
 }
 
-// Function-02: Convert Blanks to Underscores and Count
+// Function-02A: Convert Blanks to Underscores and Count
 function newName(e) {
     let oldString =  e.target.value;
     let newString =  "";
